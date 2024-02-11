@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+</head>
+<body>
+<h1>Error Page</h1>
+<p>An error occurred. Please try again.</p>
+
+<h1>Simple Calculator</h1>
+
+<form action="/calculate" method="get">
+    <label for="expression">Enter expression:</label><br>
+    <input type="text" id="expression" name="expression"><br><br>
+    <input type="submit" value="Calculate">
+</form>
+
+<div>
+    <h2>Result:</h2>
+    <p th:text="${result}"></p>
+    <p style="color: red;" th:text="${error}"></p>
+</div>
+
+</body>
+</html>
